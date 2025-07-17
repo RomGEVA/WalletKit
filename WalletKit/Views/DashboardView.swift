@@ -9,6 +9,8 @@ struct DashboardView: View {
     
     @State private var showingAddTransaction = false
     @State private var showingAddBudget = false
+    @State private var showingCalculator = false
+    @State private var showingConverter = false
     
     var body: some View {
         NavigationView {
@@ -43,6 +45,12 @@ struct DashboardView: View {
         .sheet(isPresented: $showingAddBudget) {
             AddBudgetView()
                 .environmentObject(financeManager)
+        }
+        .sheet(isPresented: $showingCalculator) {
+            CreditCalculatorView()
+        }
+        .sheet(isPresented: $showingConverter) {
+            CurrencyConverterView()
         }
     }
     
@@ -171,6 +179,22 @@ struct DashboardView: View {
                 }
                 
                 QuickActionButton(
+                    title: "Credit Calculator",
+                    icon: "function",
+                    color: .orange
+                ) {
+                    showingCalculator = true
+                }
+                
+                QuickActionButton(
+                    title: "Currency Converter",
+                    icon: "arrow.left.arrow.right",
+                    color: .green
+                ) {
+                    showingConverter = true
+                }
+                
+                QuickActionButton(
                     title: "Analytics",
                     icon: "chart.pie.fill",
                     color: .purple
@@ -179,9 +203,9 @@ struct DashboardView: View {
                 }
                 
                 QuickActionButton(
-                    title: "Settings",
-                    icon: "gearshape.fill",
-                    color: .gray
+                    title: "More",
+                    icon: "ellipsis",
+                    color: .purple
                 ) {
                     selectedTab = 4
                 }

@@ -7,43 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7473D64C2E27A4B000897AC7 /* FinanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D6302E27A4B000897AC7 /* FinanceManager.swift */; };
-		7473D64D2E27A4B000897AC7 /* FinanceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D6322E27A4B000897AC7 /* FinanceModels.swift */; };
-		7473D64E2E27A4B000897AC7 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D6342E27A4B000897AC7 /* Color+Extensions.swift */; };
-		7473D64F2E27A4B000897AC7 /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D6352E27A4B000897AC7 /* CurrencyFormatter.swift */; };
-		7473D6502E27A4B000897AC7 /* AddBudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D6372E27A4B000897AC7 /* AddBudgetView.swift */; };
-		7473D6512E27A4B000897AC7 /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D6382E27A4B000897AC7 /* AddTransactionView.swift */; };
-		7473D6522E27A4B000897AC7 /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D6392E27A4B000897AC7 /* AnalyticsView.swift */; };
-		7473D6532E27A4B000897AC7 /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D63A2E27A4B000897AC7 /* BudgetView.swift */; };
-		7473D6542E27A4B000897AC7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D63B2E27A4B000897AC7 /* ContentView.swift */; };
-		7473D6552E27A4B000897AC7 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D63C2E27A4B000897AC7 /* DashboardView.swift */; };
-		7473D6562E27A4B000897AC7 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D63D2E27A4B000897AC7 /* OnboardingView.swift */; };
-		7473D6572E27A4B000897AC7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D63E2E27A4B000897AC7 /* SettingsView.swift */; };
-		7473D6582E27A4B000897AC7 /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D63F2E27A4B000897AC7 /* TransactionsView.swift */; };
 		7473D6592E27A4B000897AC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D6412E27A4B000897AC7 /* AppDelegate.swift */; };
 		7473D65A2E27A4B000897AC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D6482E27A4B000897AC7 /* SceneDelegate.swift */; };
 		7473D65B2E27A4B000897AC7 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7473D6492E27A4B000897AC7 /* StartView.swift */; };
 		7473D65D2E27A4B000897AC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7473D6422E27A4B000897AC7 /* Assets.xcassets */; };
 		7473D65F2E27A4B000897AC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7473D6452E27A4B000897AC7 /* LaunchScreen.storyboard */; };
 		7473D6602E27A4B000897AC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7473D6472E27A4B000897AC7 /* Main.storyboard */; };
+		74B7518C2E294B4D0051C35A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7518B2E294B4D0051C35A /* ContentView.swift */; };
+		74B7518F2E294BBB0051C35A /* FinanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7518D2E294BBB0051C35A /* FinanceManager.swift */; };
+		74B751922E294BBD0051C35A /* FinanceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B751902E294BBD0051C35A /* FinanceModels.swift */; };
+		74B751962E294BBF0051C35A /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B751932E294BBF0051C35A /* Color+Extensions.swift */; };
+		74B751972E294BBF0051C35A /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B751942E294BBF0051C35A /* CurrencyFormatter.swift */; };
+		74B751A62E294BC20051C35A /* AddBudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B751982E294BC20051C35A /* AddBudgetView.swift */; };
+		74B751A72E294BC20051C35A /* AddTransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B751992E294BC20051C35A /* AddTransactionView.swift */; };
+		74B751A82E294BC20051C35A /* AnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7519A2E294BC20051C35A /* AnalyticsView.swift */; };
+		74B751A92E294BC20051C35A /* BudgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7519B2E294BC20051C35A /* BudgetView.swift */; };
+		74B751AA2E294BC20051C35A /* CreditCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7519C2E294BC20051C35A /* CreditCalculatorView.swift */; };
+		74B751AB2E294BC20051C35A /* CurrencyConverterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7519D2E294BC20051C35A /* CurrencyConverterView.swift */; };
+		74B751AC2E294BC20051C35A /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7519E2E294BC20051C35A /* DashboardView.swift */; };
+		74B751AD2E294BC20051C35A /* InvestmentCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B7519F2E294BC20051C35A /* InvestmentCalculatorView.swift */; };
+		74B751AE2E294BC20051C35A /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B751A02E294BC20051C35A /* MoreView.swift */; };
+		74B751AF2E294BC20051C35A /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B751A12E294BC20051C35A /* OnboardingView.swift */; };
+		74B751B02E294BC20051C35A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B751A22E294BC20051C35A /* SettingsView.swift */; };
+		74B751B12E294BC20051C35A /* TaxCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B751A32E294BC20051C35A /* TaxCalculatorView.swift */; };
+		74B751B22E294BC20051C35A /* TransactionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B751A42E294BC20051C35A /* TransactionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46A0451DC54508ADA05874DC /* Pods_WalletKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WalletKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7473D5B52E27A3D700897AC7 /* WalletKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7473D6302E27A4B000897AC7 /* FinanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceManager.swift; sourceTree = "<group>"; };
-		7473D6322E27A4B000897AC7 /* FinanceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceModels.swift; sourceTree = "<group>"; };
-		7473D6342E27A4B000897AC7 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
-		7473D6352E27A4B000897AC7 /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
-		7473D6372E27A4B000897AC7 /* AddBudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetView.swift; sourceTree = "<group>"; };
-		7473D6382E27A4B000897AC7 /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
-		7473D6392E27A4B000897AC7 /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
-		7473D63A2E27A4B000897AC7 /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
-		7473D63B2E27A4B000897AC7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7473D63C2E27A4B000897AC7 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
-		7473D63D2E27A4B000897AC7 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		7473D63E2E27A4B000897AC7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		7473D63F2E27A4B000897AC7 /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
 		7473D6412E27A4B000897AC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7473D6422E27A4B000897AC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7473D6432E27A4B000897AC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +43,24 @@
 		7473D6462E27A4B000897AC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7473D6482E27A4B000897AC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7473D6492E27A4B000897AC7 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		74B7518B2E294B4D0051C35A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		74B7518D2E294BBB0051C35A /* FinanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceManager.swift; sourceTree = "<group>"; };
+		74B751902E294BBD0051C35A /* FinanceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceModels.swift; sourceTree = "<group>"; };
+		74B751932E294BBF0051C35A /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		74B751942E294BBF0051C35A /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		74B751982E294BC20051C35A /* AddBudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBudgetView.swift; sourceTree = "<group>"; };
+		74B751992E294BC20051C35A /* AddTransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTransactionView.swift; sourceTree = "<group>"; };
+		74B7519A2E294BC20051C35A /* AnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsView.swift; sourceTree = "<group>"; };
+		74B7519B2E294BC20051C35A /* BudgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetView.swift; sourceTree = "<group>"; };
+		74B7519C2E294BC20051C35A /* CreditCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCalculatorView.swift; sourceTree = "<group>"; };
+		74B7519D2E294BC20051C35A /* CurrencyConverterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverterView.swift; sourceTree = "<group>"; };
+		74B7519E2E294BC20051C35A /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		74B7519F2E294BC20051C35A /* InvestmentCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentCalculatorView.swift; sourceTree = "<group>"; };
+		74B751A02E294BC20051C35A /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		74B751A12E294BC20051C35A /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		74B751A22E294BC20051C35A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		74B751A32E294BC20051C35A /* TaxCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxCalculatorView.swift; sourceTree = "<group>"; };
+		74B751A42E294BC20051C35A /* TransactionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsView.swift; sourceTree = "<group>"; };
 		BFDDD5D2556B0721A1CC49FE /* Pods-WalletKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletKit.release.xcconfig"; path = "Target Support Files/Pods-WalletKit/Pods-WalletKit.release.xcconfig"; sourceTree = "<group>"; };
 		C29BD8C79169CFAA0E7053F3 /* Pods-WalletKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WalletKit.debug.xcconfig"; path = "Target Support Files/Pods-WalletKit/Pods-WalletKit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,54 +102,9 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7473D6312E27A4B000897AC7 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				7473D6302E27A4B000897AC7 /* FinanceManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		7473D6332E27A4B000897AC7 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				7473D6322E27A4B000897AC7 /* FinanceModels.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		7473D6362E27A4B000897AC7 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				7473D6342E27A4B000897AC7 /* Color+Extensions.swift */,
-				7473D6352E27A4B000897AC7 /* CurrencyFormatter.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		7473D6402E27A4B000897AC7 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				7473D6372E27A4B000897AC7 /* AddBudgetView.swift */,
-				7473D6382E27A4B000897AC7 /* AddTransactionView.swift */,
-				7473D6392E27A4B000897AC7 /* AnalyticsView.swift */,
-				7473D63A2E27A4B000897AC7 /* BudgetView.swift */,
-				7473D63B2E27A4B000897AC7 /* ContentView.swift */,
-				7473D63C2E27A4B000897AC7 /* DashboardView.swift */,
-				7473D63D2E27A4B000897AC7 /* OnboardingView.swift */,
-				7473D63E2E27A4B000897AC7 /* SettingsView.swift */,
-				7473D63F2E27A4B000897AC7 /* TransactionsView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		7473D64B2E27A4B000897AC7 /* WalletKit */ = {
 			isa = PBXGroup;
 			children = (
-				7473D6312E27A4B000897AC7 /* Managers */,
-				7473D6332E27A4B000897AC7 /* Models */,
-				7473D6362E27A4B000897AC7 /* Utils */,
-				7473D6402E27A4B000897AC7 /* Views */,
 				7473D6412E27A4B000897AC7 /* AppDelegate.swift */,
 				7473D6422E27A4B000897AC7 /* Assets.xcassets */,
 				7473D6432E27A4B000897AC7 /* Info.plist */,
@@ -147,8 +112,58 @@
 				7473D6472E27A4B000897AC7 /* Main.storyboard */,
 				7473D6482E27A4B000897AC7 /* SceneDelegate.swift */,
 				7473D6492E27A4B000897AC7 /* StartView.swift */,
+				74B7518E2E294BBB0051C35A /* Managers */,
+				74B751912E294BBD0051C35A /* Models */,
+				74B751952E294BBF0051C35A /* Utils */,
+				74B751A52E294BC20051C35A /* Views */,
+				74B7518B2E294B4D0051C35A /* ContentView.swift */,
 			);
 			path = WalletKit;
+			sourceTree = "<group>";
+		};
+		74B7518E2E294BBB0051C35A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				74B7518D2E294BBB0051C35A /* FinanceManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		74B751912E294BBD0051C35A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74B751902E294BBD0051C35A /* FinanceModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74B751952E294BBF0051C35A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				74B751932E294BBF0051C35A /* Color+Extensions.swift */,
+				74B751942E294BBF0051C35A /* CurrencyFormatter.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		74B751A52E294BC20051C35A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74B751982E294BC20051C35A /* AddBudgetView.swift */,
+				74B751992E294BC20051C35A /* AddTransactionView.swift */,
+				74B7519A2E294BC20051C35A /* AnalyticsView.swift */,
+				74B7519B2E294BC20051C35A /* BudgetView.swift */,
+				74B7519C2E294BC20051C35A /* CreditCalculatorView.swift */,
+				74B7519D2E294BC20051C35A /* CurrencyConverterView.swift */,
+				74B7519E2E294BC20051C35A /* DashboardView.swift */,
+				74B7519F2E294BC20051C35A /* InvestmentCalculatorView.swift */,
+				74B751A02E294BC20051C35A /* MoreView.swift */,
+				74B751A12E294BC20051C35A /* OnboardingView.swift */,
+				74B751A22E294BC20051C35A /* SettingsView.swift */,
+				74B751A32E294BC20051C35A /* TaxCalculatorView.swift */,
+				74B751A42E294BC20051C35A /* TransactionsView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D6316860BF5C7B32D105620D /* Pods */ = {
@@ -257,22 +272,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7473D64C2E27A4B000897AC7 /* FinanceManager.swift in Sources */,
-				7473D64D2E27A4B000897AC7 /* FinanceModels.swift in Sources */,
-				7473D64E2E27A4B000897AC7 /* Color+Extensions.swift in Sources */,
-				7473D64F2E27A4B000897AC7 /* CurrencyFormatter.swift in Sources */,
-				7473D6502E27A4B000897AC7 /* AddBudgetView.swift in Sources */,
-				7473D6512E27A4B000897AC7 /* AddTransactionView.swift in Sources */,
-				7473D6522E27A4B000897AC7 /* AnalyticsView.swift in Sources */,
-				7473D6532E27A4B000897AC7 /* BudgetView.swift in Sources */,
-				7473D6542E27A4B000897AC7 /* ContentView.swift in Sources */,
-				7473D6552E27A4B000897AC7 /* DashboardView.swift in Sources */,
-				7473D6562E27A4B000897AC7 /* OnboardingView.swift in Sources */,
-				7473D6572E27A4B000897AC7 /* SettingsView.swift in Sources */,
-				7473D6582E27A4B000897AC7 /* TransactionsView.swift in Sources */,
 				7473D6592E27A4B000897AC7 /* AppDelegate.swift in Sources */,
 				7473D65A2E27A4B000897AC7 /* SceneDelegate.swift in Sources */,
+				74B751A62E294BC20051C35A /* AddBudgetView.swift in Sources */,
+				74B751A72E294BC20051C35A /* AddTransactionView.swift in Sources */,
+				74B751A82E294BC20051C35A /* AnalyticsView.swift in Sources */,
+				74B751A92E294BC20051C35A /* BudgetView.swift in Sources */,
+				74B751AA2E294BC20051C35A /* CreditCalculatorView.swift in Sources */,
+				74B751AB2E294BC20051C35A /* CurrencyConverterView.swift in Sources */,
+				74B751AC2E294BC20051C35A /* DashboardView.swift in Sources */,
+				74B751AD2E294BC20051C35A /* InvestmentCalculatorView.swift in Sources */,
+				74B751AE2E294BC20051C35A /* MoreView.swift in Sources */,
+				74B751AF2E294BC20051C35A /* OnboardingView.swift in Sources */,
+				74B751B02E294BC20051C35A /* SettingsView.swift in Sources */,
+				74B751B12E294BC20051C35A /* TaxCalculatorView.swift in Sources */,
+				74B751B22E294BC20051C35A /* TransactionsView.swift in Sources */,
+				74B7518C2E294B4D0051C35A /* ContentView.swift in Sources */,
 				7473D65B2E27A4B000897AC7 /* StartView.swift in Sources */,
+				74B7518F2E294BBB0051C35A /* FinanceManager.swift in Sources */,
+				74B751922E294BBD0051C35A /* FinanceModels.swift in Sources */,
+				74B751962E294BBF0051C35A /* Color+Extensions.swift in Sources */,
+				74B751972E294BBF0051C35A /* CurrencyFormatter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +325,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WalletKit/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Binan Wallest";
@@ -339,7 +359,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WalletKit/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Binan Wallest";
