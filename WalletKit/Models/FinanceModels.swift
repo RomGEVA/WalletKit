@@ -5,7 +5,7 @@ import SwiftUI
 
 // MARK: - Transaction Model
 struct Transaction: Identifiable, Codable {
-    let id = UUID()
+    var id = UUID()
     var amount: Double
     var category: Category
     var date: Date
@@ -47,7 +47,7 @@ struct Transaction: Identifiable, Codable {
 
 // MARK: - Category Model
 struct Category: Identifiable, Codable, Hashable {
-    let id = UUID()
+    var id = UUID()
     var name: String
     var icon: String
     var color: String
@@ -82,7 +82,7 @@ struct Category: Identifiable, Codable, Hashable {
 
 // MARK: - Budget Model
 struct Budget: Identifiable, Codable {
-    let id = UUID()
+    var id = UUID()
     var category: Category
     var amount: Double
     var spent: Double
@@ -151,4 +151,66 @@ struct MonthlyAnalytics {
     let income: Double
     let expenses: Double
     let net: Double
+} 
+
+// MARK: - Goal Model
+struct Goal: Identifiable, Codable {
+    let id: UUID
+    var title: String
+    var targetAmount: Double
+    var currentAmount: Double
+    var deadline: Date?
+    var category: String
+    var isCompleted: Bool
+    var history: [GoalTransaction]
+    
+    init(title: String, targetAmount: Double, deadline: Date?, category: String) {
+        self.id = UUID()
+        self.title = title
+        self.targetAmount = targetAmount
+        self.currentAmount = 0
+        self.deadline = deadline
+        self.category = category
+        self.isCompleted = false
+        self.history = []
+    }
+}
+
+struct GoalTransaction: Identifiable, Codable {
+    let id: UUID
+    var amount: Double
+    var date: Date
+    var note: String?
+    
+    init(amount: Double, date: Date, note: String? = nil) {
+        self.id = UUID()
+        self.amount = amount
+        self.date = date
+        self.note = note
+    }
+}
+
+// MARK: - Achievement Model
+struct Achievement: Identifiable, Codable {
+    let id: UUID
+    var title: String
+    var description: String
+    var isUnlocked: Bool
+    var dateUnlocked: Date?
+    var icon: String
+    
+    init(title: String, description: String, icon: String) {
+        self.id = UUID()
+        self.title = title
+        self.description = description
+        self.isUnlocked = false
+        self.dateUnlocked = nil
+        self.icon = icon
+    }
+}
+
+struct UserStats: Codable {
+    var points: Int
+    var level: Int
+    var achievements: [Achievement]
 } 

@@ -25,6 +25,8 @@ struct AnalyticsView: View {
                     
                     monthlyTrendsSection
                     
+                    categoryTrendsSection
+                    
                     insightsSection
                 }
                 .padding()
@@ -164,6 +166,47 @@ struct AnalyticsView: View {
         }
     }
     
+    private var categoryTrendsSection: some View {
+        let flatData = getFlatMonthlyCategoryData()
+        return VStack(spacing: 16) {
+            HStack {
+                Text("Category Trends")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                Spacer()
+            }
+            if flatData.isEmpty {
+                EmptyStateView(
+                    icon: "chart.bar.xaxis",
+                    title: "No Data",
+                    message: "Add transactions over time to see category trends"
+                )
+            } else {
+                Chart {
+                    ForEach(flatData) { bar in
+                        BarMark(
+                            x: .value("Month", bar.month),
+                            y: .value("Amount", bar.amount)
+                        )
+                        .foregroundStyle(Color.fromString(bar.color))
+                        .annotation(position: .overlay, alignment: .center) {
+                            if bar.amount > 0 {
+                                Text(bar.category.prefix(1))
+                                    .font(.caption2)
+                                    .foregroundColor(.white)
+                            }
+                        }
+                    }
+                }
+                .frame(height: 220)
+                .chartYAxis {
+                    AxisMarks(position: .leading)
+                }
+                .chartLegend(position: .bottom)
+            }
+        }
+    }
+    
     private var insightsSection: some View {
         VStack(spacing: 16) {
             HStack {
@@ -231,6 +274,56 @@ struct AnalyticsView: View {
         let monthlyData = financeManager.getMonthlyAnalytics()
         let bestMonth = monthlyData.max(by: { $0.net < $1.net })
         return bestMonth?.month ?? "No data"
+    }
+
+    private func getMonthlyCategoryData() -> [MonthlyCategoryData] {
+        // Группируем транзакции по месяцам и категориям
+        let transactions = financeManager.transactions.filter { $0.type == .expense }
+        let grouped = Dictionary(grouping: transactions) { (transaction) -> String in
+            let formatter = DateFormatter()
+            formatter.dateFormat = "MMM yyyy"
+            return formatter.string(from: transaction.date)
+        }
+        var result: [MonthlyCategoryData] = []
+        for (month, txs) in grouped {
+            let catGroups = Dictionary(grouping: txs, by: { $0.category })
+            let cats = catGroups.map { (cat, txs) in
+                CategoryAmount(category: cat.name, color: cat.color, amount: txs.reduce(0) { $0 + $1.amount })
+            }
+            result.append(MonthlyCategoryData(month: month, categories: cats))
+        }
+        // Сортируем по времени
+        return result.sorted { $0.month < $1.month }
+    }
+
+    private func getFlatMonthlyCategoryData() -> [FlatCategoryBar] {
+        let monthlyData = getMonthlyCategoryData()
+        var result: [FlatCategoryBar] = []
+        for monthData in monthlyData {
+            for cat in monthData.categories {
+                result.append(FlatCategoryBar(month: monthData.month, category: cat.category, color: cat.color, amount: cat.amount))
+            }
+        }
+        return result
+    }
+
+    struct MonthlyCategoryData {
+        let month: String
+        let categories: [CategoryAmount]
+    }
+
+    struct CategoryAmount {
+        let category: String
+        let color: String
+        let amount: Double
+    }
+
+    struct FlatCategoryBar: Identifiable {
+        let id = UUID()
+        let month: String
+        let category: String
+        let color: String
+        let amount: Double
     }
 }
 

@@ -2,10 +2,15 @@
 
 import SwiftUI
 import Charts
+import Foundation
+
+// Add AchievementManager
+class DashboardAchievementManager: AchievementManager {}
 
 struct DashboardView: View {
     @EnvironmentObject var financeManager: FinanceManager
     @Binding var selectedTab: Int
+    @StateObject private var achievementManager = AchievementManager()
     
     @State private var showingAddTransaction = false
     @State private var showingAddBudget = false
@@ -16,6 +21,22 @@ struct DashboardView: View {
         NavigationView {
             ScrollView {
                 VStack(spacing: 20) {
+                    // User Level and Points Section
+                    HStack(spacing: 16) {
+                        Image(systemName: "star.fill")
+                            .foregroundColor(.yellow)
+                            .font(.title2)
+                        VStack(alignment: .leading, spacing: 2) {
+                            Text("Level: \(achievementManager.userStats.level)")
+                                .font(.headline)
+                            Text("Points: \(achievementManager.userStats.points)")
+                                .font(.subheadline)
+                        }
+                        Spacer()
+                    }
+                    .padding(.horizontal)
+                    .padding(.top, 8)
+                    // End User Level and Points Section
                     financialOverviewSection
                     
                     recentTransactionsSection

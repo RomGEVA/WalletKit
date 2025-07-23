@@ -139,56 +139,30 @@ struct MoreView: View {
                 .font(.title3)
                 .fontWeight(.bold)
             
-            VStack(spacing: 12) {
-                FeatureRow(
-                    title: "Export Data",
-                    subtitle: "Export your financial data",
-                    icon: "square.and.arrow.up",
-                    color: .mint
-                ) {
-                    print("Export Data tapped")
-                    // TODO: Add export functionality
+            NavigationLink(destination: GoalsView()) {
+                HStack {
+                    Image(systemName: "flag.fill")
+                        .foregroundColor(.blue)
+                    Text("Financial Goals")
+                        .font(.headline)
+                    Spacer()
                 }
-                
-                FeatureRow(
-                    title: "Backup & Restore",
-                    subtitle: "Backup your data to iCloud",
-                    icon: "icloud.fill",
-                    color: .blue
-                ) {
-                    print("Backup & Restore tapped")
-                    // TODO: Add backup functionality
+                .padding()
+                .background(Color.blue.opacity(0.1))
+                .cornerRadius(10)
+            }
+            
+            NavigationLink(destination: AchievementsView()) {
+                HStack {
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                    Text("Achievements")
+                        .font(.headline)
+                    Spacer()
                 }
-                
-                FeatureRow(
-                    title: "Notifications",
-                    subtitle: "Manage app notifications",
-                    icon: "bell.fill",
-                    color: .orange
-                ) {
-                    print("Notifications tapped")
-                    // TODO: Add notification settings
-                }
-                
-                FeatureRow(
-                    title: "Help & Support",
-                    subtitle: "Get help and contact support",
-                    icon: "questionmark.circle.fill",
-                    color: .purple
-                ) {
-                    print("Help & Support tapped")
-                    // TODO: Add help section
-                }
-                
-                FeatureRow(
-                    title: "Settings",
-                    subtitle: "App preferences and configuration",
-                    icon: "gearshape.fill",
-                    color: .gray
-                ) {
-                    print("Settings tapped")
-                    showingSettings = true
-                }
+                .padding()
+                .background(Color.yellow.opacity(0.1))
+                .cornerRadius(10)
             }
         }
     }

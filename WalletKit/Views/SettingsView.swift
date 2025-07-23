@@ -11,7 +11,7 @@ struct SettingsView: View {
     @State private var showingResetAlert = false
     @State private var showingSafari = false
     
-    private let privacyPolicyURL = "https://www.termsfeed.com/live/9bfd3cb2-df73-4b8b-a4f6-853cd4f1f6a2"
+    private let privacyPolicyURL = "https://wallest.app/privacy"
     
     var body: some View {
         NavigationView {
